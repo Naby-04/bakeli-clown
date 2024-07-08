@@ -18,6 +18,7 @@ marquee {
 
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 100px;
 }
@@ -47,6 +48,7 @@ nav {
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #e5e7eb;
 }
 /*-------------------- logo --------------------*/
@@ -78,7 +80,6 @@ nav ul li a {
   transition: all 0.3s;
 }
 nav ul li a:hover {
-  /* color: #ff9800; */
   border-bottom: 3px solid #ff9800;
 }
 /*-------------- formation-details --------------*/
@@ -103,7 +104,6 @@ summary::after {
   color: #fff;
   border-radius: 20px;
   border: none;
-  /* font-weight: 400; */
 }
 
 /*---------------------------------------------- main section ----------------------------------------------*/
@@ -212,7 +212,6 @@ summary::after {
 /*-------------------------------------------------- dommaine duree part --------------------------------------------------*/
 
 .dommaine-duree {
-  /* border: 1px solid red; */
   display: flex;
 }
 .dommaine-duree img {
@@ -223,7 +222,6 @@ summary::after {
 /*--------------------------------------------------------- footer ---------------------------------------------------------*/
 
 footer {
-  /* height: 70vh; */
   margin-top: 50px;
   background: #e5e7eb;
   padding: 10px 30px;
@@ -299,7 +297,6 @@ input {
   gap: 50px;
   width: 330px;
   flex-grow: 1;
-  /* flex-wrap: wrap; */
 }
 .copyright {
   width: 100%;
@@ -328,16 +325,12 @@ input {
   marquee {
     display: inline;
   }
-  /* .annonce {
-    display: none;
-  } */
   .burger {
     display: inline;
     justify-self: flex-start;
     height: 30px;
   }
   nav {
-    /* justify-content: center; */
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
