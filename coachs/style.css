@@ -92,7 +92,7 @@ summary {
   color: #ff9800;
 }
 summary::after {
-  content: url(/icons/bx-chevron-down.png);
+  content: url(../icons/bx-chevron-down.png);
 }
 
 /*-------------------- button --------------------*/
@@ -128,7 +128,7 @@ h1 {
   list-style: disc;
 }
 .banniere {
-  background: url(/images/background.png);
+  background: url(images/background.png);
   background-size: cover;
   background-position: center;
   height: 40vh;
