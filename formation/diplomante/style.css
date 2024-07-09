@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  list-style: none;
+  /* border: 1px solid red; */
+}
+.burger {
+  display: none;
+}
+marquee {
+  display: none;
+}
+
+/*---------------------------------------------- header part ----------------------------------------------*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+/*---------------------------------------------- annonce part ----------------------------------------------*/
+
+.annonce {
+  background: radial-gradient(#fff, rgb(213, 168, 149));
+  background-repeat: repeat;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+}
+.annonce ul {
+  display: flex;
+  gap: 20px;
+}
+.annonce:hover {
+  background: radial-gradient(#fff, rgb(240, 207, 193));
+}
+
+/*---------------------------------------------- navbar part ----------------------------------------------*/
+
+nav {
+  background: #fff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+/*-------------------- logo --------------------*/
+
+.logo {
+  width: 50px;
+  height: 40px;
+}
+.logo img {
+  width: 80px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/*-------------------- menu --------------------*/
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li {
+  padding: 5px 10px;
+  list-style: none;
+}
+nav ul li a {
+  font-size: 14.4px;
+  color: #000;
+  transition: all 0.3s;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid #ff9800;
+}
+/*-------------- formation-details --------------*/
+
+summary {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 8px 0px;
+  color: #ff9800;
+}
+summary::after {
+  content: url(/icons/bx-chevron-down.png);
+}
+
+/*-------------------- button --------------------*/
+
+.inscription {
+  height: 20px;
+  padding: 10px 20px;
+  background: #ff9800;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+}
+
+/*---------------------------------------------- main section ----------------------------------------------*/
+/*---------------------------------------------- banniere section ----------------------------------------------*/
+/*---------------------------------------------- banniere section left-side ----------------------------------------------*/
+
+.banniere {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 154px 30px 55px 30px;
+}
+.banniere-text {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.banniere-text h2 {
+  font-size: 30px;
+}
+.banniere-text p {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+.banniere-text a {
+  padding: 10px 20px;
+  width: 180px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.inscription-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.inscription-info .info1,
+.inscription-info .info2 {
+  display: flex;
+  gap: 5px;
+}
+.inscription-info .info1 img,
+.inscription-info .info2 img {
+  height: 25px;
+  width: 25px;
+}
+.inscription-info .info1 p,
+.inscription-info .info2 p {
+  font-size: 14px;
+}
+
+/*---------------------------------------------- banniere section right-side ----------------------------------------------*/
+
+.banniere img {
+  width: 451px;
+  object-fit: cover;
+}
+
+/*---------------------------------------------------- domaine section ----------------------------------------------------*/
+
+.dommaine {
+  margin-top: 50px;
+}
+.dommaine-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 380px);
+  gap: 10px;
+  padding-left: 10px;
+}
+
+/*---------------------------------------------------- domaine card section ----------------------------------------------------*/
+
+.dommaine-card:hover {
+  box-shadow: 5px 5px 10px #cdcdcd;
+}
+.dommaine > h2 {
+  margin: 20px;
+}
+.dommaine-card {
+  border: 1px solid #cdcdcd;
+  width: 380px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  flex-grow: 1;
+}
+.dommaine-text {
+  padding: 0px 20px;
+}
+.dommaine-card img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.dommaine-card h2 {
+  font-size: 1rem;
+  margin: 15px 0px;
+}
+.dommaine-text p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/*-------------------------------------------------- dommaine duree part --------------------------------------------------*/
+
+.dommaine-duree {
+  display: flex;
+}
+.dommaine-duree img {
+  height: 16px;
+  width: 16px;
+}
+
+/*--------------------------------------------------------- footer ---------------------------------------------------------*/
+
+footer {
+  margin-top: 50px;
+  background: #f9fafb;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  max-width: 330px;
+  flex-grow: 1;
+}
+.footer-text {
+  width: 300px;
+  flex-grow: 1;
+}
+footer h2 {
+  font-size: 14px;
+  color: #9ca3af;
+}
+.contacts,
+.navigation {
+  margin-top: 55px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-grow: 1;
+}
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.navigation ul li a {
+  color: #000;
+}
+.footer-text > img {
+  width: 130px;
+}
+.navigation ul li a:hover {
+  color: #009688;
+}
+.social-medias img:hover {
+  background: #ff9800;
+}
+.social-medias img {
+  margin-top: 10px;
+  width: 30px;
+  background-color: #3b3b3b;
+  border-radius: 50%;
+  padding: 5px;
+}
+/*----------------------------- newsletter -----------------------------*/
+.newsletter {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.newsletter button {
+  padding: 20px 10px;
+  background: #009688;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+}
+.newsletter input {
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+  /* width: 100%; */
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #9ca3af;
+  padding-top: 20px;
+}
+
+/*------------------------------------------- responsive -------------------------------------------*/
+
+@media screen and (max-width: 790px) {
+  .banniere > img {
+    display: none;
+  }
+}
+@media screen and (max-width: 990px) {
+  header {
+    z-index: 1;
+  }
+  .annonce p,
+  .annonce ul {
+    display: none;
+  }
+  marquee {
+    display: inline;
+  }
+  .burger {
+    display: inline;
+    justify-self: flex-start;
+    height: 30px;
+  }
+  nav {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  nav ul,
+  details,
+  .inscription {
+    display: none;
+  }
+}

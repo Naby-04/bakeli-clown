@@ -168,6 +168,7 @@ span::after,
 }
 .form-group1 .input-box {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   flex-direction: column;
   width: 100%;
@@ -300,16 +301,15 @@ footer h2 {
 
 /*------------------------------------------- responsive -------------------------------------------*/
 
+@media screen and (max-width: 450px) {
+  .form-group1 .first-box,
+  .form-group1 .second-box,
+  .form-group1 .third-box,
+  .form-group1 .fourth-box {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 990px) {
-  main {
-    /* padding: 0px; */
-  }
-  .form-group2 .first-box,
-  .form-group2 .second-box,
-  .form-group2 .third-box,
-  .form-group2 .fourth-box {
-    gap: 1px;
-  }
   .form-group1 {
     padding: 5px;
   }

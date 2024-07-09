@@ -92,7 +92,7 @@ summary {
   color: #ff9800;
 }
 summary::after {
-  content: url(/icons/bx-chevron-down.png);
+  content: url(../icons/bx-chevron-down.png);
 }
 
 /*-------------------- button --------------------*/
@@ -120,6 +120,13 @@ main {
 h1 {
   font-size: 18px;
 }
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card p {
+  font-size: 16px;
+}
 .nav ul li:nth-child(1) {
   color: #ff9800;
   text-decoration: underline;
@@ -128,7 +135,7 @@ h1 {
   list-style: disc;
 }
 .banniere {
-  background: url(/images/background.png);
+  background: url(images/background.png);
   background-size: cover;
   background-position: center;
   height: 40vh;
@@ -148,27 +155,41 @@ h1 {
 
 .card {
   padding: 5px;
-  width: 350px;
+  width: 245px;
   height: 350px;
   text-align: center;
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 340px);
+  grid-template-columns: repeat(auto-fill, 240px);
   place-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
 }
 
 /*--------------------------------------------------------- footer ---------------------------------------------------------*/
 
 footer {
   margin-top: 50px;
-  background: #e5e7eb;
+  background: #f9fafb;
   padding: 10px 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 100px;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  max-width: 330px;
+  flex-grow: 1;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  flex-grow: 1;
+  gap: 30px;
 }
 footer h2 {
   font-size: 14px;
@@ -176,8 +197,8 @@ footer h2 {
 }
 .contacts,
 .navigation {
-  margin-top: 50px;
-  width: 300px;
+  margin-top: 55px;
+  max-width: 150px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -186,23 +207,16 @@ footer h2 {
 .navigation ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .navigation ul li a {
   color: #000;
 }
-.navigation ul li a:hover {
-  color: #009688;
-}
-.footer-text {
-  min-width: 300px;
-  flex-grow: 1;
-}
 .footer-text > img {
   width: 130px;
 }
-.social-medias {
-  margin-top: 10px;
+.navigation ul li a:hover {
+  color: #009688;
 }
 .social-medias img:hover {
   background: #ff9800;
@@ -213,6 +227,7 @@ footer h2 {
   border-radius: 50%;
   padding: 5px;
 }
+/*----------------------------- newsletter -----------------------------*/
 .newsletter {
   margin-top: 50px;
   display: flex;
@@ -228,16 +243,10 @@ footer h2 {
   border-radius: 5px;
   width: 100px;
 }
-input {
+.newsletter input {
   padding: 20px 10px;
   border-radius: 5px;
   border: 1px solid #cdcdcd;
-}
-.middle {
-  display: flex;
-  gap: 50px;
-  width: 330px;
-  flex-grow: 1;
 }
 .copyright {
   width: 100%;
@@ -245,6 +254,7 @@ input {
   border-top: 1px solid #9ca3af;
   padding-top: 20px;
 }
+
 /*------------------------------------------- responsive -------------------------------------------*/
 
 @media screen and (max-width: 990px) {
