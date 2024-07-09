@@ -108,17 +108,31 @@ summary::after {
 
 /*------------------------------------------ main-section ------------------------------------------*/
 
-/* pour les element en main section mettez un padding top pour qu'il s'affiche normalement */
+main {
+  padding: 154px 10px 10px 10px;
+}
 
 /*--------------------------------------------------------- footer ---------------------------------------------------------*/
 
 footer {
   margin-top: 50px;
-  background: #e5e7eb;
+  background: #f9fafb;
   padding: 10px 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 100px;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  max-width: 330px;
+  flex-grow: 1;
+}
+.footer-text {
+  /* min-width: 300px; */
+  width: 300px;
+  flex-grow: 1;
 }
 footer h2 {
   font-size: 14px;
@@ -126,8 +140,8 @@ footer h2 {
 }
 .contacts,
 .navigation {
-  margin-top: 50px;
-  width: 300px;
+  margin-top: 55px;
+  max-width: 150px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -136,39 +150,35 @@ footer h2 {
 .navigation ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .navigation ul li a {
   color: #000;
 }
-.navigation ul li a:hover {
-  color: #009688;
-}
-.footer-text {
-  min-width: 300px;
-  flex-grow: 1;
-}
 .footer-text > img {
   width: 130px;
 }
-.social-medias {
-  margin-top: 10px;
+.navigation ul li a:hover {
+  color: #009688;
 }
 .social-medias img:hover {
   background: #ff9800;
 }
 .social-medias img {
+  margin-top: 10px;
   width: 30px;
   background-color: #3b3b3b;
   border-radius: 50%;
   padding: 5px;
 }
+/*----------------------------- newsletter -----------------------------*/
 .newsletter {
   margin-top: 50px;
   display: flex;
   gap: 30px;
   flex-direction: column;
   flex-grow: 1;
+  /* max-width: 200px; */
 }
 .newsletter button {
   padding: 20px 10px;
@@ -178,16 +188,11 @@ footer h2 {
   border-radius: 5px;
   width: 100px;
 }
-input {
+.newsletter input {
   padding: 20px 10px;
   border-radius: 5px;
   border: 1px solid #cdcdcd;
-}
-.middle {
-  display: flex;
-  gap: 50px;
-  width: 330px;
-  flex-grow: 1;
+  /* width: 100%; */
 }
 .copyright {
   width: 100%;
