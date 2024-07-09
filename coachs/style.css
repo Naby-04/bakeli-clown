@@ -92,7 +92,7 @@ summary {
   color: #ff9800;
 }
 summary::after {
-  content: url(/icons/bx-chevron-down.png);
+  content: url(../icons/bx-chevron-down.png);
 }
 
 /*-------------------- button --------------------*/
