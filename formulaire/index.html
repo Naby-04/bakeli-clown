@@ -3,7 +3,337 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!---------------------------------------------- header ---------------------------------------------->
+    <header>
+      <!-------------------------------------------- annonce --------------------------------------------->
+
+      <div class="annonce">
+        <img src="#" alt="" />
+        <marquee behavior="" direction="left"
+          >Rentrée du 09 Juillet 2024 &nbsp;&nbsp;&nbsp; Inscriptions en cours
+          jusqu'au 19 juillet 2024 &nbsp;&nbsp;&nbsp; Nombres de places
+          limitées&nbsp;&nbsp;&nbsp;
+        </marquee>
+        <p>Rentrée du 09 Juillet 2024</p>
+        <ul>
+          <li>Inscriptions en cours jusqu'au 19 juillet 2024</li>
+          <li>Nombres de places limitées</li>
+        </ul>
+        <img src="#" alt="" />
+      </div>
+
+      <!-------------------------------------------- navbar -------------------------------------------->
+
+      <nav id="ancre1">
+        <img src="../icons/menu-burger.png" alt="menu-burrger" class="burger" />
+        <div class="logo">
+          <a href="#ancre1"
+            ><img src="/image/bakeli.png" alt="logo bakeli"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="../accueil.html">Accueil</a></li>
+          <details>
+            <summary>Formations</summary>
+            <div class="formation-details">
+              <li><a href="#">Nos formations</a></li>
+            </div>
+            <div class="formation-details">
+              <li>
+                <a href="../formation/index.html">Formations Certifiantes</a>
+              </li>
+            </div>
+            <div class="formation-details">
+              <li>
+                <a href="../formation/diplomante/index.html"
+                  >Formations Diplômantes</a
+                >
+              </li>
+            </div>
+          </details>
+          <li><a href="../coachs/index.html">Coachs</a></li>
+          <li><a href="../Événements/index.html">Événements</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+        </ul>
+        <a class="inscription" href="/formulaire/index.html">Nous rejoindre</a>
+      </nav>
+    </header>
+
+    <!------------------------------------------ main section ------------------------------------------>
+
+    <main>
+      <img src="image/rentree.png" alt="" />
+      <div class="text">
+        <strong>NB:</strong> Champs avec <span></span> obligatoire.
+      </div>
+      <form action="#">
+        <!---------------------------- form-group1 ---------------------------->
+
+        <div class="form-group1">
+          <h2>Informations personnelles</h2>
+
+          <!---------------- first-input-box ---------------->
+
+          <div class="first-box">
+            <div class="input-box">
+              <label for="prénom" class="required">Prénom</label>
+              <input type="text" id="prénom" name="prénom" required />
+            </div>
+            <div class="input-box">
+              <label for="nom" class="required">nom</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
+          </div>
+
+          <!---------------- second-input-box ---------------->
+
+          <div class="second-box">
+            <div class="input-box">
+              <label for="email" class="required">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="input-box">
+              <label for="telephone" class="required">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" required />
+            </div>
+          </div>
+
+          <!---------------- third-input-box ---------------->
+
+          <div class="third-box">
+            <div class="input-box">
+              <label for="residence" class="required">Ville résidence</label>
+              <input type="text" id="residence" name="residence" required />
+            </div>
+          </div>
+
+          <!---------------- third-input-box ---------------->
+
+          <div class="fourth-box">
+            <div class="input-box">
+              <label for="message" class="message"
+                >Quelles sont vos motivations pour cette formation?</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Dites nous ce que vous voulez..."
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------------- form-group1 ---------------------------->
+
+        <div class="form-group2">
+          <!---------------- first-input-box ---------------->
+
+          <div class="first-box">
+            <p class="required">
+              Quelle formation souhaitez-vous suivre à Bakeli?
+            </p>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="dev-mob et market-dig"
+                id="dev-mob"
+                value="dev-mob"
+                required
+              />
+              <label for="dev-mob"> Développement web et mobile</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="dev-mob et market-dig"
+                id="market-dig"
+                value="market-dig"
+                required
+              />
+              <label for="market-dig"
+                >Marketing et Communication digitale</label
+              >
+            </div>
+          </div>
+
+          <!---------------- second-input-box ---------------->
+
+          <div class="second-box">
+            <p class="required">Je m'inscris pour</p>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="type de formation"
+                id="ligne"
+                value="ligne"
+                required
+              />
+              <label for="ligne"> La formation en ligne</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="type de formation"
+                id="presentiel"
+                value="presentiel"
+                required
+              />
+              <label for="presentiel"> La formation en présentiel</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="type de formation"
+                id="weekends"
+                value="weekends"
+                required
+              />
+              <label for="weekends"> La formation les weekends</label>
+            </div>
+          </div>
+
+          <!---------------- third-input-box ---------------->
+
+          <div class="third-box">
+            <p class="required">Dans quelle Bakeli voulez-vous vous former?</p>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="lieu de formation"
+                id="Dakar"
+                value="Dakar"
+                required
+              />
+              <label for="Dakar"> Dakar</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="lieu de formation"
+                id="Thies"
+                value="Thies"
+                required
+              />
+              <label for="Thies"> Thiès</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="lieu de formation"
+                id="Mbour"
+                value="Mbour"
+                required
+              />
+              <label for="Mbour"> Mbour</label>
+            </div>
+          </div>
+
+          <!---------------- fourth-input-box ---------------->
+
+          <div class="fourth-box">
+            <p class="required">Comment avez-vous connu Bakeli?</p>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="moyen"
+                id="whatsapp"
+                value="whatsapp"
+                required
+              />
+              <label for="whatsapp"> Via WhatsApp</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="moyen"
+                id="LinkedIn"
+                value="LinkedIn"
+                required
+              />
+              <label for="LinkedIn"> Via LinkedIn</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="moyen"
+                id="instagram"
+                value="instagram"
+                required
+              />
+              <label for="instagram"> Via Instagram</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="moyen"
+                id="youtube"
+                value="youtube"
+                required
+              />
+              <label for="youtube"> Via Youtube</label>
+            </div>
+            <div class="input-box">
+              <input
+                type="radio"
+                name="moyen"
+                id="autre"
+                value="autre"
+                required
+              />
+              <label for="autre"> Via un ami/camarade/proche...</label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-------------------------------------------- footer -------------------------------------------->
+
+    <footer>
+      <div class="footer-text">
+        <img src="../image/bakeli.png" alt="logo bakeli" />
+        <p>
+          Bakeli est une école de formation professionnelle dans les nouvelles
+          technologies créer par Volkeno. Elle a formé + de 6000 étudiants et
+          professionnels aux métiers des nouvelles technologies et du digital.
+        </p>
+        <div class="social-medias">
+          <img src="../icons/x-logo.png" alt="x-logo" />
+          <img src="../icons/bxl-facebook.png" alt="facebook-logo" />
+          <img src="../icons/bxl-linkedin.png" alt="Linkedin-logo" />
+          <img src="../icons/bxl-instagram.png" alt="instagram-logo" />
+        </div>
+      </div>
+      <div class="middle">
+        <div class="navigation">
+          <h2>BAKELI</h2>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Nos coachs</a></li>
+            <li><a href="#">Événements</a></li>
+            <li><a href="#">blog</a></li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <h2>CONTACTS</h2>
+          <a>
+            Hlm Grand Yoff Villa n°241 Près du terminus des bus Dakar Dem Dikk
+            qui vont à l'AIBD
+          </a>
+          <a> +221 78 546 15 51</a>
+          <a>contact@bakeli.tech</a>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h2>S'ABONNER A LA NEWSLETTER</h2>
+        <input type="email" placeholder="Votre email" />
+        <button>S'inscrire</button>
+      </div>
+      <p class="copyright">© Copyright 2024, Tous droits réservés.</p>
+    </footer>
+  </body>
 </html>
