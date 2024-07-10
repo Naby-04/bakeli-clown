@@ -108,10 +108,9 @@ summary::after {
 
 /*------------------------------------------ main-section ------------------------------------------*/
 
-<<<<<<< HEAD
 main {
   padding: 154px 10px 10px 10px;
-=======
+  }
 /* pour les element en main section mettez un padding top pour qu'il s'affiche normalement */
 .formation{
   display: flex;
