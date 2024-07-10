@@ -237,7 +237,6 @@ footer {
   flex-grow: 1;
 }
 .footer-text {
-  /* min-width: 300px; */
   width: 300px;
   flex-grow: 1;
 }
@@ -285,7 +284,6 @@ footer h2 {
   gap: 30px;
   flex-direction: column;
   flex-grow: 1;
-  /* max-width: 200px; */
 }
 .newsletter button {
   padding: 20px 10px;
