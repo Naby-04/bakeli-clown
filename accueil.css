@@ -82,6 +82,10 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 3px solid #ff9800;
 }
+nav ul li a:nth-child(1) {
+  color: #ff9800;
+}
+
 /*-------------- formation-details --------------*/
 
 summary {
@@ -89,10 +93,10 @@ summary {
   align-items: center;
   height: 20px;
   padding: 8px 0px;
-  color: #ff9800;
+  cursor: pointer;
 }
 summary::after {
-  content: url(/icons/bx-chevron-down.png);
+  content: url(../icons/bx-chevron-down.png);
 }
 
 /*-------------------- button --------------------*/
@@ -145,6 +149,7 @@ main {
 }
 
 /* -----------------section stats --------------*/
+
 .section-stats{
   display: flex;
   justify-content: center;
