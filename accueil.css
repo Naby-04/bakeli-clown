@@ -163,7 +163,7 @@ main {
   align-items: center;
   gap: 10px; 
 }
-span {
+.stat span {
  background-color: teal;
   color: white;
   border-radius: 50px;
