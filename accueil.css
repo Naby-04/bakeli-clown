@@ -120,6 +120,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  flex-wrap: wrap;
 }
 .containe {
   width: 170%;
@@ -412,7 +413,6 @@ footer {
   flex-grow: 1;
 }
 .footer-text {
-  /* min-width: 300px; */
   width: 300px;
   flex-grow: 1;
 }
