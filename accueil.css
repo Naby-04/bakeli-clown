@@ -349,6 +349,7 @@ span {
 .info .span-last span{
   color: orange;
   font-size: 17px;
+  margin-top: 10px;
 }
 .info h3 {
   font-size: 18px;  
