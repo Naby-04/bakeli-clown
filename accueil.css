@@ -349,7 +349,11 @@ main {
 .info .span-last span{
   color: orange;
   font-size: 17px;
-  margin-top: 10px;
+}
+.info .span-last{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .info h3 {
   font-size: 18px;  
