@@ -82,6 +82,10 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 3px solid #ff9800;
 }
+nav ul li:nth-child(1) a {
+  color: #ff9800;
+}
+
 /*-------------- formation-details --------------*/
 
 summary {
@@ -89,10 +93,10 @@ summary {
   align-items: center;
   height: 20px;
   padding: 8px 0px;
-  color: #ff9800;
+  cursor: pointer;
 }
 summary::after {
-  content: url(/icons/bx-chevron-down.png);
+  content: url(../icons/bx-chevron-down.png);
 }
 
 /*-------------------- button --------------------*/
@@ -108,15 +112,15 @@ summary::after {
 
 /*------------------------------------------ main-section ------------------------------------------*/
 
-<<<<<<< HEAD
 main {
   padding: 154px 10px 10px 10px;
-=======
+  }
 /* pour les element en main section mettez un padding top pour qu'il s'affiche normalement */
 .formation{
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  flex-wrap: wrap;
 }
 .containe {
   width: 170%;
@@ -146,6 +150,7 @@ main {
 }
 
 /* -----------------section stats --------------*/
+
 .section-stats{
   display: flex;
   justify-content: center;
@@ -159,7 +164,7 @@ main {
   align-items: center;
   gap: 10px; 
 }
-span {
+.stat span {
  background-color: teal;
   color: white;
   border-radius: 50px;
@@ -314,8 +319,81 @@ span {
 .cta{
     display: flex;
     justify-content: center;
->>>>>>> 16ae4388805e75e11078234df4801cf7cd31296c
 }
+/* ---------------section last carte---------------- */
+.last-carte {
+  padding: 30px;
+}
+.temoin{
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+.laste {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px gray;
+  max-width: 330px;
+}
+.laste p {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.info .span-last span{
+  color: orange;
+  font-size: 17px;
+}
+.info .span-last{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info h3 {
+  font-size: 18px;  
+}
+.info img {
+  width: 50px;
+  height: 55px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+/* --------section centre---------- */
+.section-centre {
+ background-image: url(image8.jpeg);
+ height: 22vh;
+ width: 100%;
+  color: white;
+  padding: 18px;
+}
+.centre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parag h3 {
+  font-size: 24px;
+ 
+}
+.parag p{
+  font-size: 20px;
+}
+.buton a {
+  color: red;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
 
 /*--------------------------------------------------------- footer ---------------------------------------------------------*/
 
@@ -335,7 +413,6 @@ footer {
   flex-grow: 1;
 }
 .footer-text {
-  /* min-width: 300px; */
   width: 300px;
   flex-grow: 1;
 }
